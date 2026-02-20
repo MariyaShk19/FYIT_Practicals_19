@@ -1,1 +1,73 @@
+#include<iostream>
 
+using namespace std;
+ 
+class Number
+
+{
+
+    int x,y,z;
+
+public:
+
+    void input()
+
+    {
+
+        cout<<"Enter three Numbers"<<endl;
+
+        cin>>x>>y>>z;
+
+    }
+
+    void display()
+
+    {
+
+        cout<<"x = "<<x<<" y = "<<y<<" z = "<<z<<endl;
+
+    }
+
+    void operator-()
+
+    {
+
+        x=-x;
+
+        y=-y;
+
+        z=-z;
+
+    }
+
+};
+ 
+int main()
+
+{
+
+    Number n;
+
+    int n1=10;
+
+    n.input();
+
+    cout<<"Before overloading: "<<endl;
+
+    n.display();
+
+    -n;
+
+    cout<<"After Applying unary minus operator: "<<endl;
+
+    n.display();
+
+    cout<<endl<<"n1 Value"<<-n1;
+
+    return 0;
+
+}
+
+ 
+7b
+ 
